@@ -1,0 +1,99 @@
+Script started on 2021-09-13 03:46:21+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;ong@f6linux14: ~ong@f6linux14:~$ cd ws3
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ hw[KEAD -N 1 ../AMA[K[K[Kamazon_reviews_us_Books_v1_02.tsv 
+hEAD: command not found
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ head -n 1 ../amazon_reviews_us_Books_v1_02.tsv 
+marketplace	customer_id	review_id	product_id	product_parent	product_title	product_category	star_rating	helpful_votes	total_votes	vine	verified_purchase	review_headline	review_body	review_date
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ cut -d ""[C "\ "[1P "[1P "" "[1P "" "[C[1P"[K[C"[CZ"6Rb*7&B"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"^V"^?"[2P"[2P"   ""[Khead -n 1 ../amazon_reviews_us_Books_v1_02.tsv [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccut -d ""[K   ""[K   " "-"f"[1P"[1P"[1P""[K^V"[2P"^V"[2P"^V"[2P"   "[C f[K-f 2 > [K[K../amazon_reviews_us_Books_v1_02.tsv > cu stomerids.txt
+
+#1. First cut the customer IDs row and then sorted, used unique to find amount of unique values (also remove duplicate), and then return the first column sorted by the count of unique values (amount of times a unique customer ID showed up)
+
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ cut -d "   " -f 2 ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2 ../amazon_reviews_us_Books_v1_02.tsv > cust[1Pomerids.txt[A]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../amazon_reviews_us_Books_v1_02.tsv > custo[1Pmerids.txt[A]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt[A]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C4 ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt[A]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt[A]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccut -d "   " -f 4  ../amazon_reviews_us_Books_v1_02.tsv > customerids.txt[1Prids.txt[C[C[C[C[C[1Prids.txt[C[C[C[C[C[1Pids.txt[C[C[C[C[1Pids.txt[C[C[C[1Pids.txt[C[C[1Pids.txt[C[1Pids.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cid[1Ps.txt[A]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cids[1P.txt[A]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ids.txt[A]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpids.txtrids.txt[Coids.txt[C[Cdids.txt[C[C[Cuids.txt[C[C[C[Ccids.txt[C[C[C[C[Ctids.txt[K[A]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ cut -d "   " -f 4  ../amazon_reviews_us_Books_v1_02.tsv > productids.txt[C[C[C[C[C[C[C
+
+# 2 First cut the product IDs row and then sorted, used unique to find amount of unique values (also remove duplicate), and then return the first column sorted by the count of unique values (amount of times a unique productID showed up)
+Command used above
+
+wc  ]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ wc *txt
+ 3105521  3105521 27949692 customerids.txt
+ 3105521  3105521 34160731 productids.txt
+ 6211042  6211042 62110423 total
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ head customerids.txt
+customer_id
+12076615
+12703090
+12257412
+50732546
+51964897
+31048862
+53000124
+29732693
+48541186
+
+# 1 Sorting + Use of uniq + reverse + head; Top 3 Customer reviewers: 50122160, 50732546, and 52615377
+
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ sort[K[K[K[Ksort customerids.txt ~[K| uniq -c ~[K| sort -nk1 --reverse | head
+  21922 50122160
+   9964 50732546
+   2664 52615377
+   2215 45041039
+   1797 50776149
+   1786 50913245
+   1643 20595117
+   1622 45273033
+   1416 39569598
+   1384 49693975
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ head productids.txt 
+product_id
+0385730586
+0811828964
+1844161560
+0373836635
+0262181533
+0316769487
+0805076069
+1581603681
+0300108834
+
+# 2 Sorting + Use of uniq + reverse + head; Top 3 reviewed Products: 043935806X, 0439139597, and 0525947647
+
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ sort productids.txt | uniq -c | sort -nk1 --reverse |head[K[K[K[K head
+   4625 043935806X
+   3739 0439139597
+   2666 0525947647
+   2615 0895260174
+   2584 0385504209
+   2366 0590353403
+   2052 0439784549
+   2024 0316666343
+   1795 1400050308
+   1772 0312864590
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ head -n 1 ..//[Kamazon_reviews_us_Books_v1_02.tsv 
+marketplace	customer_id	review_id	product_id	product_parent	product_title	product_category	star_rating	helpful_votes	total_votes	vine	verified_purchase	review_headline	review_body	review_date
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ cut "Z6Rb*7&B[K[K[K[K[K[K[K[K^V[K      ""[K      "[C[C[C[C[C[C[C"[K[C[K[K"
+> "[K^C
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ cut "      " - [Kf 9 ../amazon_reviews_us_Books_v1_02.tsv  [K>hel[K[K[K helpful.txt
+cut: ''$'\t': No such file or directory
+^C
+
+# 3 Looking for helpful votes column and cutting it
+
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ cut -d ""   "[C -f 9 ../amazon_reviews_us_Books_v1_02.tsv  >help[K[K[K[K helpfult.txt[K[K[K[K[K.txt
+
+# 3 Sorting the helpful file, using uniq and finding the majority amount of reviews (ended up being 0) Below shows how many times each 
+
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ sort helpful/t[K[K.txt ~[K| uniq -c | sort -nk1 --reverse | head
+ 459924 0
+ 408857 1
+ 333718 2
+ 269068 3
+ 215443 4
+ 176301 5
+ 144403 6
+ 120319 7
+ 101095 8
+  85924 9
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ history > cmds.log
+]0;ong@f6linux14: ~/ws3ong@f6linux14:~/ws3$ exit
+
+Script done on 2021-09-13 04:07:38+00:00 [COMMAND_EXIT_CODE="0"]
